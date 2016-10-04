@@ -54,9 +54,9 @@ class AboutArrays < Neo::Koan
   def test_slicing_with_ranges
     array = [:jelly, :butter, :and, :peanut]
 
-    assert_equal [:peanut, :butter, :and], array[0..2]
-    assert_equal [:peanut, :butter], array[0...2]
-    assert_equal [:and, :jelly], array[2..-1]
+    assert_equal [:jelly, :butter, :and], array[0..2]
+    assert_equal [:jelly, :butter], array[0...2]
+    assert_equal [:and, :peanut], array[2..-1]
   end
 
   def test_pushing_and_popping_arrays
